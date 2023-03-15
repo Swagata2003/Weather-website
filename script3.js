@@ -68,7 +68,7 @@ function fetching(){
         document.body.style.backgroundImage="url(stormyweather.jpg)";
     }
     else if(h=="Snow"){
-        document.body.style.backgroundImage="url(snowweather.jpeg)";
+        document.body.style.backgroundImage="url(snow.jpg)";
     }
     else{
         document.body.style.backgroundImage="url(wallpaper2.jpg)";

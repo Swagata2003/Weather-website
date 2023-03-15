@@ -64,7 +64,7 @@ function fetching(){
     else if(h=="Windy"){
         document.body.style.backgroundImage="url(weather-clouds-sky-cloud-cover.jpg)";
     }
-    else if(h=="Storm"){
+    else if(h=="Storm"||h=="Thunderstorm"){
         document.body.style.backgroundImage="url(stormyweather.jpg)";
     }
     else if(h=="Snow"){

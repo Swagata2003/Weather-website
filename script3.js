@@ -33,7 +33,7 @@ function fetching(){
     const api = "26e09a7c321453eda4b376762236682e";
 
 	// API URL
-	const base =`http://api.openweathermap.org/data/2.5/weather?q=${cit}&appid=26e09a7c321453eda4b376762236682e`
+	const base =`https://api.openweathermap.org/data/2.5/weather?q=${cit}&appid=26e09a7c321453eda4b376762236682e`
         
     fetch(base).then((response) => {
 	    return response.json();

@@ -4,6 +4,8 @@ let temp = document.querySelector(".temp");
 let MinMaxTemp = document.querySelector(".min-max");
 let weatherType = document.querySelector(".weather");
 let date=document.querySelector(".date");
+let humid=document.querySelector(".humidity");
+let wind=document.querySelector(".wind");
 const todayDate= new Date();
 const kelvin = 273;
 
@@ -42,8 +44,10 @@ function fetching(){
 	    console.log(data);
         city.textContent=data.name+","+data.sys.country;
     	temp.textContent =Math.floor(data.main.temp - kelvin) + "°C";
-	    MinMaxTemp.textContent = Math.floor(data.main.temp_min-kelvin) + "°C/" + Math.ceil(data.main.temp_max-kelvin)+"°C";
-	    weatherType.textContent=data.weather[0].main;
+        MinMaxTemp.textContent = Math.floor(data.main.temp_min-kelvin) + "°C/" + Math.ceil(data.main.temp_max-kelvin)+"°C";
+        weatherType.textContent=data.weather[0].main;
+	humid.innerText="Humidity: "+data.main.humidity+"%";
+        wind.innerText="Wind speed: "+ (data.wind.speed*(18/5)).toFixed(2)+" km/hr";
         date.innerText=dateManage(todayDate);
     });
     var h=weatherType.textContent;

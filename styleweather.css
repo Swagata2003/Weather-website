@@ -113,7 +113,7 @@ label,h1{
     line-height: 2rem;
     border-radius: 10px;
     background-color: rgba(236, 234, 234, 0.689);
-    height:35vh;
+    height:42vh;
 }
 .location-details{
     font-weight: bold;
@@ -129,8 +129,25 @@ label,h1{
     font-family: "Arial Rounded MT";
     text-shadow: 2px 4px rgba(0, 0, 0, 0.205)
 }
-.min-max,.weather{
+.min-max{
     font-family: "Arial Rounded MT";
     font-size:15pt;
     font-weight: 600;
+}
+.weather{
+    font-family: "Arial Rounded MT";
+    font-size:20pt;
+    font-weight: 600;
+}
+.humidity{
+    font-family: "Satisfy";
+    padding-top: 8px;
+    font-size:20px;
+    font-weight: 800 ;
+}
+.wind{
+    font-family: "Great Vibes";
+    padding-top: 2px;
+    font-weight: 700;
+    font-size: 30px;
 }

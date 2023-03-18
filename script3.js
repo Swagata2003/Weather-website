@@ -6,6 +6,7 @@ let weatherType = document.querySelector(".weather");
 let date=document.querySelector(".date");
 let humid=document.querySelector(".humidity");
 let wind=document.querySelector(".wind");
+let weathericon=document.getElementById("1");
 const todayDate= new Date();
 const kelvin = 273;
 
@@ -52,26 +53,33 @@ function fetching(){
     });
     var h=weatherType.textContent;
     document.querySelector('.weather-body').style.display="block";
-    
+    weathericon.classList.remove("fa-wind");
     if(h=='Clear'||h=='Sunny'){
+	weathericon.classList.add("fa-sun");
         document.body.style.backgroundImage="url(sunnyweather.jpg)";
     }
     else if(h=='Haze'||h=='Clouds'||h=='Mist'){
+	weathericon.classList.add("fa-cloud");
         document.body.style.backgroundImage="url(weather-clouds-sky-cloud-cover.jpg)";
     }
     else if(h=='Smoke'){
+	weathericon.classList.add("fa-smog");
         document.body.style.backgroundImage="url(smoke.jpg)";
     }
     else if(h=="Rain"){
+	weathericon.classList.add("fa-cloud-rain");
         document.body.style.backgroundImage="url(rainyweather.jpg)";
     }
     else if(h=="Windy"){
+	weathericon.classList.add("fa-wind");
         document.body.style.backgroundImage="url(weather-clouds-sky-cloud-cover.jpg)";
     }
     else if(h=="Storm"||h=="Thunderstorm"){
+	weathericon.classList.add("fa-cloud-bolt");
         document.body.style.backgroundImage="url(stormyweather.jpg)";
     }
     else if(h=="Snow"){
+	weathericon.classList.add("fa-snow");
         document.body.style.backgroundImage="url(snow.jpg)";
     }
     else{

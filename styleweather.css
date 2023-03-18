@@ -115,7 +115,7 @@ label,h1{
     line-height: 2rem;
     border-radius: 10px;
     background-color: rgba(236, 234, 234, 0.689);
-    height:42vh;
+    height:43vh;
 }
 .location-details{
     font-weight: bold;
@@ -139,17 +139,31 @@ label,h1{
 .weather{
     font-family: "Arial Rounded MT";
     font-size:20pt;
-    font-weight: 600;
+    font-weight: 500;
+    padding: 0px 7px 3px 90px ;
 }
 .humidity{
     font-family: "Satisfy";
-    padding-top: 8px;
+    padding-top: 2px;
     font-size:20px;
-    font-weight: 800 ;
+    font-weight: 600 ;
+    padding: 0px 7px 0px 0px ;
 }
 .wind{
     font-family: "Great Vibes";
-    padding-top: 2px;
-    font-weight: 700;
+    ont-weight: 700;
     font-size: 30px;
+    padding: 0px 10px 0px 5px ;
+}
+.win,.wea{
+    display:flex;
+}
+.humid i{
+    padding-top: 5px;
+}
+.wea i{
+    padding-top: 9px;
+}
+.win{
+    padding-top: 5px;
 }
